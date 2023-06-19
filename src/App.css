@@ -17,7 +17,9 @@ a{
 }
 
 .section-title{
-  color: blue;
+  font-weight: 700;
+  font-size: 30px;
+  color: black;
 }
 
 ul{
@@ -30,4 +32,22 @@ ul{
   --secondary-color:#ffffff;
   --btn-color: #6c42aa;
   --special-color: #dc3545;
+}
+
+section{
+  padding: 50px 0;
+}
+
+
+.register-btn{
+  background: var(--btn-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+  padding: 7px 15px;
+
 }
