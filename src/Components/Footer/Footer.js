@@ -1,6 +1,10 @@
 import './Footer.css';
-import Footerlogo from "../../assets/img/footer.png"
+import Footerlogo from "../../assets/img/footer.png";
+import {Link} from "react-router-dom";
 function Footer(){
+    const handleClick =() =>{
+        window.scrollTo(0,0);
+    }
     return(
         <>
         <footer className="footer">
@@ -16,9 +20,9 @@ function Footer(){
                     <div className="footer-box">
                         <h4 className="footer-title">Company</h4>
                         <ul className="footer-list">
-                            <li><a href="">Our programe</a></li>
-                            <li><a href="">Our plans</a></li>
-                            <li><a href="">Become a member</a></li>
+                            <li><Link to='/courses' onClick={handleClick}>Our programe</Link></li>
+                            <li><Link to='/services' onClick={handleClick}>Our plans</Link></li>
+                            <li><Link>Become a member</Link></li>
                         </ul>
                     </div>
                     <div className="footer-box">
@@ -26,9 +30,9 @@ function Footer(){
                             Quick links
                         </h4>
                         <ul className="footer-list">
-                            <li><a href="">About us</a></li>
-                            <li><a href="">Contact us</a></li>
-                            <li><a href="">Support us</a></li>
+                            <li><Link to='/aboutus' onClick={handleClick}>About us</Link></li>
+                            <li><Link to='/contact' onClick={handleClick}>Contact us</Link></li>
+                            <li><Link to='/supportus' >Support us</Link></li>
                         </ul>
                     </div>
                 </div>

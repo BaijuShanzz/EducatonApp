@@ -2,6 +2,8 @@ import './Home.css';
 import HomeImage from '../../../assets/img/meta.jpeg';
 import {AiOutlineWhatsApp} from "react-icons/ai";
 import Course from '../Course/Course';
+import Community from '../Community/Community';
+import Plans from '../../pages/Plans/Plans';
 function Home () {
     return(
         <>
@@ -40,6 +42,8 @@ function Home () {
             </div>
         </section>
         <Course/>
+        <Community/>
+        <Plans/>
         </>
     )
 };

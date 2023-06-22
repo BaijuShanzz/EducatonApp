@@ -1,0 +1,24 @@
+.start-wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.start-img img{
+    width: 50%;
+    border-radius: 5%;
+}
+
+.start-img img{
+    width: 100%;
+    margin: 2px;
+    margin-bottom: 20px;
+}
+
+.start-content p{
+    font-style: 1.1rem;
+    line-height: 20px;
+    margin-bottom: 50px;
+
+}

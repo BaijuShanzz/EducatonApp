@@ -14,8 +14,8 @@
   justify-content: center;
   align-items: center;
 }
-.logo .logo-title{
-    padding: 0 10px;
+.logo .logo-title {
+  padding: 0 10px;
 }
 .menu {
   display: flex;
@@ -23,15 +23,11 @@
   align-items: center;
 }
 
-.menu-item{
-    padding: 0 10px;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: color ease-in 0.3s;
-}
-
-
-.menu-item:hover{
-    color: var(--special-color);
+.menu-item {
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color ease-in 0.3s;
+  color: var(--secondary-color);
 }

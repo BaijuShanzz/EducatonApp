@@ -27,11 +27,9 @@ ul{
 }
 
 :root{
-  --bg-color: #a067f5;
-  --primary-color: #F24080;
-  --secondary-color:#ffffff;
-  --btn-color: #6c42aa;
-  --special-color: #dc3545;
+ --primary-color: #7f11e0;
+ --btn-color:  #5783db;
+ --secondary-color : #6f55f2;
 }
 
 section{
@@ -49,5 +47,17 @@ section{
   font-weight: 700;
   outline: none;
   padding: 7px 15px;
+  transition: color ease-in 0.3s;
 
+}
+
+.register-btn:hover{
+  color: black;
+}
+a{
+  color: var(--primary-color);
+}
+a:hover{
+  
+  color: var(--secondary-color);
 }

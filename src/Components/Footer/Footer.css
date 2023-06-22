@@ -1,5 +1,7 @@
 .footer{
-    background: var(--bg-color);
+    background: var(--secondary-color);
+    margin-top: 50px;
+    height: 35vh;;
 }
 
 .footer-logo img{

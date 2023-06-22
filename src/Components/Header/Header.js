@@ -1,5 +1,6 @@
 import "./Header.css"
-import logo from "../../assets/img/education-logo.png"
+import logo from "../../assets/img/education-logo.png";
+import {Link} from "react-router-dom"
 function Header() {
   const navTitles = [
     {
@@ -7,16 +8,20 @@ function Header() {
       display: "Home",
     },
     {
-      path: "/",
-      display: "About",
-    },
-    {
-      path: "/",
+      path: "/courses",
       display: "Course",
     },
     {
-      path: "/",
-      display: "Footer",
+      path: "/services",
+      display: "Service",
+    },
+    {
+      path: "/aboutus",
+      display: "About us",
+    },
+    {
+      path: "/contact",
+      display: "Contact",
     },
   ];
 
@@ -35,7 +40,7 @@ function Header() {
             <ul className="menu">
               {
                 navTitles.map((item)=>(
-                  <li className="menu-item">{item.display}</li>
+                  <li className="menu-item"><Link to={item.path}>{item.display}</Link></li>
                 ))
               }
             </ul>
